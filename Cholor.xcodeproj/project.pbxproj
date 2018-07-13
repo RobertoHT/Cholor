@@ -18,6 +18,11 @@
 		E1F99E4920F462D400FCB841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F99E4820F462D400FCB841 /* Assets.xcassets */; };
 		E1F99E4C20F462D400FCB841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F99E4A20F462D400FCB841 /* LaunchScreen.storyboard */; };
 		E1FE2A7120F958F500563C7A /* UIColor+Cholor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE2A7020F958F500563C7A /* UIColor+Cholor.swift */; };
+		E1FE2A7B20F95C5600563C7A /* InicioViewController+Inicializadores.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE2A7A20F95C5600563C7A /* InicioViewController+Inicializadores.swift */; };
+		E1FE2A7D20F95C8800563C7A /* InicioViewController+Navegacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE2A7C20F95C8800563C7A /* InicioViewController+Navegacion.swift */; };
+		E1FE2A7F20F95CBC00563C7A /* JuegoViewController+Navegacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE2A7E20F95CBC00563C7A /* JuegoViewController+Navegacion.swift */; };
+		E1FE2A8120F95CC600563C7A /* JuegoViewController+Acciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE2A8020F95CC600563C7A /* JuegoViewController+Acciones.swift */; };
+		E1FE2A8320F95CE000563C7A /* ListadoViewController+Acciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE2A8220F95CE000563C7A /* ListadoViewController+Acciones.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		E1F99E4B20F462D400FCB841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1F99E4D20F462D400FCB841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1FE2A7020F958F500563C7A /* UIColor+Cholor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Cholor.swift"; sourceTree = "<group>"; };
+		E1FE2A7A20F95C5600563C7A /* InicioViewController+Inicializadores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InicioViewController+Inicializadores.swift"; sourceTree = "<group>"; };
+		E1FE2A7C20F95C8800563C7A /* InicioViewController+Navegacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InicioViewController+Navegacion.swift"; sourceTree = "<group>"; };
+		E1FE2A7E20F95CBC00563C7A /* JuegoViewController+Navegacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JuegoViewController+Navegacion.swift"; sourceTree = "<group>"; };
+		E1FE2A8020F95CC600563C7A /* JuegoViewController+Acciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JuegoViewController+Acciones.swift"; sourceTree = "<group>"; };
+		E1FE2A8220F95CE000563C7A /* ListadoViewController+Acciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListadoViewController+Acciones.swift"; sourceTree = "<group>"; };
 		FF316DD358F7BEF7AFE5A561 /* Pods_Cholor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cholor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,9 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				E1F99E4120F462D400FCB841 /* AppDelegate.swift */,
-				E1F99E4320F462D400FCB841 /* InicioViewController.swift */,
-				E179A4EE20F83F6400F8E2B7 /* JuegoViewController.swift */,
-				E179A4F020F853E900F8E2B7 /* ListadoViewController.swift */,
+				E1FE2A7920F95BFD00563C7A /* Inicio */,
+				E1FE2A7820F95BF700563C7A /* Juego */,
+				E1FE2A7720F95BF000563C7A /* Listado */,
 			);
 			path = Controladores;
 			sourceTree = "<group>";
@@ -151,6 +161,35 @@
 				E1F99E4D20F462D400FCB841 /* Info.plist */,
 			);
 			path = Recursos;
+			sourceTree = "<group>";
+		};
+		E1FE2A7720F95BF000563C7A /* Listado */ = {
+			isa = PBXGroup;
+			children = (
+				E179A4F020F853E900F8E2B7 /* ListadoViewController.swift */,
+				E1FE2A8220F95CE000563C7A /* ListadoViewController+Acciones.swift */,
+			);
+			path = Listado;
+			sourceTree = "<group>";
+		};
+		E1FE2A7820F95BF700563C7A /* Juego */ = {
+			isa = PBXGroup;
+			children = (
+				E179A4EE20F83F6400F8E2B7 /* JuegoViewController.swift */,
+				E1FE2A7E20F95CBC00563C7A /* JuegoViewController+Navegacion.swift */,
+				E1FE2A8020F95CC600563C7A /* JuegoViewController+Acciones.swift */,
+			);
+			path = Juego;
+			sourceTree = "<group>";
+		};
+		E1FE2A7920F95BFD00563C7A /* Inicio */ = {
+			isa = PBXGroup;
+			children = (
+				E1F99E4320F462D400FCB841 /* InicioViewController.swift */,
+				E1FE2A7A20F95C5600563C7A /* InicioViewController+Inicializadores.swift */,
+				E1FE2A7C20F95C8800563C7A /* InicioViewController+Navegacion.swift */,
+			);
+			path = Inicio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,9 +311,14 @@
 			files = (
 				E1F99E4420F462D400FCB841 /* InicioViewController.swift in Sources */,
 				E179A4F120F853E900F8E2B7 /* ListadoViewController.swift in Sources */,
+				E1FE2A8320F95CE000563C7A /* ListadoViewController+Acciones.swift in Sources */,
+				E1FE2A8120F95CC600563C7A /* JuegoViewController+Acciones.swift in Sources */,
 				E1F99E4220F462D400FCB841 /* AppDelegate.swift in Sources */,
 				E179A4EF20F83F6400F8E2B7 /* JuegoViewController.swift in Sources */,
 				E1FE2A7120F958F500563C7A /* UIColor+Cholor.swift in Sources */,
+				E1FE2A7D20F95C8800563C7A /* InicioViewController+Navegacion.swift in Sources */,
+				E1FE2A7F20F95CBC00563C7A /* JuegoViewController+Navegacion.swift in Sources */,
+				E1FE2A7B20F95C5600563C7A /* InicioViewController+Inicializadores.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
