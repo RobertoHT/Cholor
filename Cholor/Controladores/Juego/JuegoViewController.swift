@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Hero
 
 class JuegoViewController: UIViewController {
 
@@ -22,18 +21,6 @@ class JuegoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func inicioPulsado(_ sender: UIButton) {
-        self.hero.dismissViewController()
-    }
-    
     // MARK: - Navigation
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "irListado" {
-            let juegoViewController = segue.destination as! ListadoViewController
-            juegoViewController.hero.isEnabled = true
-            juegoViewController.hero.modalAnimationType = .selectBy(presenting: .slide(direction: .left), dismissing: .slide(direction: .right))
-        }
-    }
 
 }
