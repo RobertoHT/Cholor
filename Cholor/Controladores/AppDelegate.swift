@@ -59,6 +59,52 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // MARK: - AudioKit
+    
+    func initMezcladorMusical() {
+        // Crear reproductores
+        do {
+            // Archivos de sonido
+            let musicaFondoArchivo = try AKAudioFile(readFileName: "Cholor.m4a")
+            let botonJuegaArchivo = try AKAudioFile(readFileName: "Boton-Jugar.m4a")
+            let bolaGolpeandoParedArchivo = try AKAudioFile(readFileName: "Bola-Golpeando-Pared.m4a")
+            let choqueBolasArchivo = try AKAudioFile(readFileName: "Choque-Bolas.m4a")
+            let choqueBolaNegraArchivo = try AKAudioFile(readFileName: "Bola-Negra.m4a")
+            let finPartidaArchivo = try AKAudioFile(readFileName: "Fin-Partida.m4a")
+            let siguienteNivelArchivo = try AKAudioFile(readFileName: "Nuevo-Nivel.m4a")
+            // Reproductores
+            musicaFondoReproductor = try AKAudioPlayer(file: musicaFondoArchivo)
+            botonJugarReproductor = try AKAudioPlayer(file: botonJuegaArchivo)
+            colisionBolasReproductor = try AKAudioPlayer(file: choqueBolasArchivo)
+            colisionParedReproductor = try AKAudioPlayer(file: bolaGolpeandoParedArchivo)
+            colisionBolasNaranjasReproductor = try AKAudioPlayer(file: finPartidaArchivo)
+            colisionConBolaNegraReproductor = try AKAudioPlayer(file: choqueBolaNegraArchivo)
+            siguienteNivelReproductor = try AKAudioPlayer(file: siguienteNivelArchivo)
+            // Establece si se repite indefinidamente el audio
+            musicaFondoReproductor.looping = true
+            // Volumen de los reproductores
+            musicaFondoReproductor.volume = volumenInicial
+            botonJugarReproductor.volume = volumenInicial + 1
+            colisionBolasReproductor.volume = volumenInicial
+            colisionParedReproductor.volume = volumenInicial - 0.8
+            colisionBolasNaranjasReproductor.volume = volumenInicial + 0.5
+            colisionConBolaNegraReproductor.volume = volumenInicial + 0.5
+            siguienteNivelReproductor.volume = volumenInicial + 0.5
+        } catch {
+            print(error)
+        }
+        //Crear el mezclador de música
+        mezclador = AKMixer (musicaFondoReproductor, botonJugarReproductor, colisionBolasReproductor, colisionParedReproductor, colisionBolasNaranjasReproductor, colisionConBolaNegraReproductor, siguienteNivelReproductor)
+        // Inicialización del motor AudioKit
+        AudioKit.output = mezclador
+        do {
+            try AudioKit.start()
+        } catch {
+            print("Se ha producido un error al intentar iniciar el motor de AudioKit")
+        }
+        // Será movido
+        musicaFondoReproductor.play()
+    }
 
 }
 
