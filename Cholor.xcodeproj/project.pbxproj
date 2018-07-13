@@ -23,6 +23,12 @@
 		E1FE2A7F20F95CBC00563C7A /* JuegoViewController+Navegacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE2A7E20F95CBC00563C7A /* JuegoViewController+Navegacion.swift */; };
 		E1FE2A8120F95CC600563C7A /* JuegoViewController+Acciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE2A8020F95CC600563C7A /* JuegoViewController+Acciones.swift */; };
 		E1FE2A8320F95CE000563C7A /* ListadoViewController+Acciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE2A8220F95CE000563C7A /* ListadoViewController+Acciones.swift */; };
+		E1FE2A8B20F96DCB00563C7A /* Nuevo-Nivel.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E1FE2A8520F96DCA00563C7A /* Nuevo-Nivel.m4a */; };
+		E1FE2A8C20F96DCB00563C7A /* Boton-Jugar.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E1FE2A8620F96DCA00563C7A /* Boton-Jugar.m4a */; };
+		E1FE2A8D20F96DCB00563C7A /* Bola-Golpeando-Pared.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E1FE2A8720F96DCB00563C7A /* Bola-Golpeando-Pared.m4a */; };
+		E1FE2A8E20F96DCB00563C7A /* Choque-Bolas.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E1FE2A8820F96DCB00563C7A /* Choque-Bolas.m4a */; };
+		E1FE2A8F20F96DCB00563C7A /* Fin-Partida.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E1FE2A8920F96DCB00563C7A /* Fin-Partida.m4a */; };
+		E1FE2A9020F96DCB00563C7A /* Bola-Negra.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E1FE2A8A20F96DCB00563C7A /* Bola-Negra.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +52,12 @@
 		E1FE2A7E20F95CBC00563C7A /* JuegoViewController+Navegacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JuegoViewController+Navegacion.swift"; sourceTree = "<group>"; };
 		E1FE2A8020F95CC600563C7A /* JuegoViewController+Acciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JuegoViewController+Acciones.swift"; sourceTree = "<group>"; };
 		E1FE2A8220F95CE000563C7A /* ListadoViewController+Acciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListadoViewController+Acciones.swift"; sourceTree = "<group>"; };
+		E1FE2A8520F96DCA00563C7A /* Nuevo-Nivel.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nuevo-Nivel.m4a"; sourceTree = "<group>"; };
+		E1FE2A8620F96DCA00563C7A /* Boton-Jugar.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Boton-Jugar.m4a"; sourceTree = "<group>"; };
+		E1FE2A8720F96DCB00563C7A /* Bola-Golpeando-Pared.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bola-Golpeando-Pared.m4a"; sourceTree = "<group>"; };
+		E1FE2A8820F96DCB00563C7A /* Choque-Bolas.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Choque-Bolas.m4a"; sourceTree = "<group>"; };
+		E1FE2A8920F96DCB00563C7A /* Fin-Partida.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fin-Partida.m4a"; sourceTree = "<group>"; };
+		E1FE2A8A20F96DCB00563C7A /* Bola-Negra.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bola-Negra.m4a"; sourceTree = "<group>"; };
 		FF316DD358F7BEF7AFE5A561 /* Pods_Cholor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cholor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,8 +168,8 @@
 		E1FE2A7620F959FE00563C7A /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
+				E1FE2A8420F96DA800563C7A /* Audios */,
 				E179A4EA20F83A7F00F8E2B7 /* olivier_demo.ttf */,
-				E179A4EC20F83ACA00F8E2B7 /* Cholor.m4a */,
 				E1F99E4D20F462D400FCB841 /* Info.plist */,
 			);
 			path = Recursos;
@@ -190,6 +202,20 @@
 				E1FE2A7C20F95C8800563C7A /* InicioViewController+Navegacion.swift */,
 			);
 			path = Inicio;
+			sourceTree = "<group>";
+		};
+		E1FE2A8420F96DA800563C7A /* Audios */ = {
+			isa = PBXGroup;
+			children = (
+				E179A4EC20F83ACA00F8E2B7 /* Cholor.m4a */,
+				E1FE2A8720F96DCB00563C7A /* Bola-Golpeando-Pared.m4a */,
+				E1FE2A8A20F96DCB00563C7A /* Bola-Negra.m4a */,
+				E1FE2A8620F96DCA00563C7A /* Boton-Jugar.m4a */,
+				E1FE2A8820F96DCB00563C7A /* Choque-Bolas.m4a */,
+				E1FE2A8920F96DCB00563C7A /* Fin-Partida.m4a */,
+				E1FE2A8520F96DCA00563C7A /* Nuevo-Nivel.m4a */,
+			);
+			path = Audios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,10 +281,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1FE2A9020F96DCB00563C7A /* Bola-Negra.m4a in Resources */,
+				E1FE2A8F20F96DCB00563C7A /* Fin-Partida.m4a in Resources */,
 				E1F99E4C20F462D400FCB841 /* LaunchScreen.storyboard in Resources */,
+				E1FE2A8B20F96DCB00563C7A /* Nuevo-Nivel.m4a in Resources */,
 				E1F99E4920F462D400FCB841 /* Assets.xcassets in Resources */,
 				E179A4ED20F83ACA00F8E2B7 /* Cholor.m4a in Resources */,
 				E179A4EB20F83A7F00F8E2B7 /* olivier_demo.ttf in Resources */,
+				E1FE2A8D20F96DCB00563C7A /* Bola-Golpeando-Pared.m4a in Resources */,
+				E1FE2A8C20F96DCB00563C7A /* Boton-Jugar.m4a in Resources */,
+				E1FE2A8E20F96DCB00563C7A /* Choque-Bolas.m4a in Resources */,
 				E1F99E4720F462D400FCB841 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
