@@ -1,16 +1,22 @@
 PODS:
+  - AudioKit (4.3):
+    - AudioKit/UI (= 4.3)
+  - AudioKit/UI (4.3)
   - Hero (1.2.0)
 
 DEPENDENCIES:
+  - AudioKit (~> 4.2)
   - Hero (~> 1.2.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AudioKit
     - Hero
 
 SPEC CHECKSUMS:
+  AudioKit: 95bd2427c1afa7954d71b0c6195a09b87b7448bc
   Hero: 33dadf2cd1c98af71e213dcbc2902e6e03622a4e
 
-PODFILE CHECKSUM: 15f90bbc55c2bfc9486d79ad763c1307843e7b7a
+PODFILE CHECKSUM: 1f0544aea6aee454fe63541a2c79670bdb0ad85b
 
 COCOAPODS: 1.5.3
