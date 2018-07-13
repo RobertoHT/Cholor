@@ -17,6 +17,7 @@
 		E1F99E4720F462D400FCB841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F99E4520F462D400FCB841 /* Main.storyboard */; };
 		E1F99E4920F462D400FCB841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F99E4820F462D400FCB841 /* Assets.xcassets */; };
 		E1F99E4C20F462D400FCB841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F99E4A20F462D400FCB841 /* LaunchScreen.storyboard */; };
+		E1FE2A7120F958F500563C7A /* UIColor+Cholor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FE2A7020F958F500563C7A /* UIColor+Cholor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E1F99E4820F462D400FCB841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1F99E4B20F462D400FCB841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1F99E4D20F462D400FCB841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1FE2A7020F958F500563C7A /* UIColor+Cholor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Cholor.swift"; sourceTree = "<group>"; };
 		FF316DD358F7BEF7AFE5A561 /* Pods_Cholor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cholor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				E1F99E4A20F462D400FCB841 /* LaunchScreen.storyboard */,
 				E1F99E4D20F462D400FCB841 /* Info.plist */,
 				E179A4F220F855B900F8E2B7 /* Playgrounds */,
+				E1FE2A7020F958F500563C7A /* UIColor+Cholor.swift */,
 			);
 			path = Cholor;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				E179A4F120F853E900F8E2B7 /* ListadoViewController.swift in Sources */,
 				E1F99E4220F462D400FCB841 /* AppDelegate.swift in Sources */,
 				E179A4EF20F83F6400F8E2B7 /* JuegoViewController.swift in Sources */,
+				E1FE2A7120F958F500563C7A /* UIColor+Cholor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
