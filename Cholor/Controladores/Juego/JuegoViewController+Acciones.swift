@@ -6,4 +6,11 @@
 //  Copyright © 2018 Roberto Hernandez Tamayo. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import Hero
+
+extension JuegoViewController {
+    @IBAction func inicioPulsado(_ sender: UIButton) {
+        self.hero.dismissViewController()
+    }
+}
