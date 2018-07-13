@@ -102,18 +102,7 @@
 				E1FE2A7420F959F100563C7A /* Vistas */,
 				E1FE2A7520F959F800563C7A /* Modelos */,
 				E1FE2A7620F959FE00563C7A /* Recursos */,
-				E1F99E4120F462D400FCB841 /* AppDelegate.swift */,
-				E1F99E4520F462D400FCB841 /* Main.storyboard */,
-				E1F99E4320F462D400FCB841 /* InicioViewController.swift */,
-				E179A4EE20F83F6400F8E2B7 /* JuegoViewController.swift */,
-				E179A4F020F853E900F8E2B7 /* ListadoViewController.swift */,
-				E1F99E4820F462D400FCB841 /* Assets.xcassets */,
-				E179A4EA20F83A7F00F8E2B7 /* olivier_demo.ttf */,
-				E179A4EC20F83ACA00F8E2B7 /* Cholor.m4a */,
-				E1F99E4A20F462D400FCB841 /* LaunchScreen.storyboard */,
-				E1F99E4D20F462D400FCB841 /* Info.plist */,
 				E179A4F220F855B900F8E2B7 /* Playgrounds */,
-				E1FE2A7020F958F500563C7A /* UIColor+Cholor.swift */,
 			);
 			path = Cholor;
 			sourceTree = "<group>";
@@ -121,6 +110,7 @@
 		E1FE2A7220F959E100563C7A /* Extensiones */ = {
 			isa = PBXGroup;
 			children = (
+				E1FE2A7020F958F500563C7A /* UIColor+Cholor.swift */,
 			);
 			path = Extensiones;
 			sourceTree = "<group>";
@@ -128,6 +118,10 @@
 		E1FE2A7320F959EA00563C7A /* Controladores */ = {
 			isa = PBXGroup;
 			children = (
+				E1F99E4120F462D400FCB841 /* AppDelegate.swift */,
+				E1F99E4320F462D400FCB841 /* InicioViewController.swift */,
+				E179A4EE20F83F6400F8E2B7 /* JuegoViewController.swift */,
+				E179A4F020F853E900F8E2B7 /* ListadoViewController.swift */,
 			);
 			path = Controladores;
 			sourceTree = "<group>";
@@ -135,6 +129,9 @@
 		E1FE2A7420F959F100563C7A /* Vistas */ = {
 			isa = PBXGroup;
 			children = (
+				E1F99E4520F462D400FCB841 /* Main.storyboard */,
+				E1F99E4820F462D400FCB841 /* Assets.xcassets */,
+				E1F99E4A20F462D400FCB841 /* LaunchScreen.storyboard */,
 			);
 			path = Vistas;
 			sourceTree = "<group>";
@@ -149,6 +146,9 @@
 		E1FE2A7620F959FE00563C7A /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
+				E179A4EA20F83A7F00F8E2B7 /* olivier_demo.ttf */,
+				E179A4EC20F83ACA00F8E2B7 /* Cholor.m4a */,
+				E1F99E4D20F462D400FCB841 /* Info.plist */,
 			);
 			path = Recursos;
 			sourceTree = "<group>";
@@ -413,7 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NSD9MZZM2F;
-				INFOPLIST_FILE = Cholor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Cholor/Recursos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roberto.Cholor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,7 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NSD9MZZM2F;
-				INFOPLIST_FILE = Cholor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Cholor/Recursos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roberto.Cholor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
