@@ -2,12 +2,35 @@
 //  Copyright © 2018 Roberto Hernandez Tamayo.
 
 import UIKit
+import AudioKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // MARK: - Propiedades globales para la aplicación
+    
     var window: UIWindow?
 
+    /// Reproductor con la música de fondo para el juego
+    var musicaFondoReproductor: AKAudioPlayer!
+    /// Reproductor para escuchar el sonido al pulsar el botón jugar
+    var botonJugarReproductor: AKAudioPlayer!
+    /// Reproductor para escuchar la colisión de la bola de lanzamiento con otra bola
+    var colisionBolasReproductor: AKAudioPlayer!
+    /// Reproductor para escuchar la colisión de la bola con los límites del área de juego
+    var colisionParedReproductor: AKAudioPlayer!
+    /// Reproductor para escuchar la colisión entre las dos bolas naranjas
+    var colisionBolasNaranjasReproductor: AKAudioPlayer!
+    /// Reproductor para escuchar la colisión entre la bola de lanzamiento y la bola negra
+    var colisionConBolaNegraReproductor: AKAudioPlayer!
+    /// Reproductor para escuchar la colisión el sonido para pasar al siguiente nivel
+    var siguienteNivelReproductor: AKAudioPlayer!
+    /// Mezclador con todos los reproductores
+    var mezclador: AKMixer!
+    /// Volumen inicial del reproductor de música de fondo
+    let volumenInicial: Double = 1
+    
+    // MARK: - Ciclo de vida de la aplicación
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
