@@ -1,15 +1,15 @@
-//
-//  InicioViewControler+Inicializadores.swift
-//  Cholor
-//
-//  Created by Roberto Hernández Tamayo on 13/07/18.
-//  Copyright © 2018 Roberto Hernandez Tamayo. All rights reserved.
-//
+//  Cholor App by Roberto Hernández Tamayo on 09/07/18.
+//  Copyright © 2018 Roberto Hernandez Tamayo.
 
 import UIKit
 import AVFoundation
 
+// Inicializadores
+
 extension InicioViewController {
+    /**
+     Inicia al escuchar la música de fondo del juego
+    */
     func iniciarReproductor() {
         // Escuchar la música del juego
         guard let ruta = Bundle.main.path(forResource: "Cholor", ofType: "m4a") else {
