@@ -33,7 +33,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Ciclo de vida de la aplicación
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        if mezclador == nil {
+            // Inicializa el mezclador al iniciar la aplicación
+            initMezcladorMusical()
+        } else {
+            // Inicia el play, si ya esta creado el mezclador
+            do {
+                try AudioKit.start()
+            } catch {
+                print("Se ha producido un error al iniciar el motor de AudioKit")
+            }
+            mezclador.play()
+        }
         return true
     }
 
