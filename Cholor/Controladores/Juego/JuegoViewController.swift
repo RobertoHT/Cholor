@@ -5,6 +5,16 @@ import UIKit
 
 /// Clase que corresponde con la pantalla del área de juego
 class JuegoViewController: UIViewController {
+    // MARK: - Propiedades
+    
+    // MARK: - Globales
+    
+    // Variables
+    
+    /// Volumen inicial de la música de fondo, establecido en el segue de la página inicio
+    lazy var volumenMusicaFondo: Double = {
+        return AppDelegate.compartido().musicaFondoReproductor.volume
+    }()
 
     // MARK: - Ciclo de vida
     override func viewDidLoad() {
