@@ -8,7 +8,7 @@ import AVFoundation
 
 extension InicioViewController {
     /**
-     Inicia al escuchar la música de fondo del juego
+     Inicia la reproducción de la música de fondo del juego
     */
     func iniciarReproductor() {
     }

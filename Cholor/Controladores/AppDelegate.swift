@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var colisionBolasNaranjasReproductor: AKAudioPlayer!
     /// Reproductor para escuchar la colisión entre la bola de lanzamiento y la bola negra
     var colisionConBolaNegraReproductor: AKAudioPlayer!
-    /// Reproductor para escuchar la colisión el sonido para pasar al siguiente nivel
+    /// Reproductor para escuchar el sonido para pasar al siguiente nivel
     var siguienteNivelReproductor: AKAudioPlayer!
     /// Mezclador con todos los reproductores
     var mezclador: AKMixer!
