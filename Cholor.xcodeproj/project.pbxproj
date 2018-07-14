@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		61153F659945CA150F3B5BAB /* Pods_Cholor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF316DD358F7BEF7AFE5A561 /* Pods_Cholor.framework */; };
 		E16D33F620FABB2A00C52588 /* User_defaults+Cholor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16D33F520FABB2A00C52588 /* User_defaults+Cholor.swift */; };
+		E16D33F920FABCC700C52588 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16D33F820FABCC700C52588 /* Material.swift */; };
 		E179A4EB20F83A7F00F8E2B7 /* olivier_demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E179A4EA20F83A7F00F8E2B7 /* olivier_demo.ttf */; };
 		E179A4ED20F83ACA00F8E2B7 /* Cholor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E179A4EC20F83ACA00F8E2B7 /* Cholor.m4a */; };
 		E179A4EF20F83F6400F8E2B7 /* JuegoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E179A4EE20F83F6400F8E2B7 /* JuegoViewController.swift */; };
@@ -36,6 +37,7 @@
 		98F78BA484DDED8B19E87AEB /* Pods-Cholor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cholor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cholor/Pods-Cholor.release.xcconfig"; sourceTree = "<group>"; };
 		AA12C498B5004F9D37A6AC1B /* Pods-Cholor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cholor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cholor/Pods-Cholor.debug.xcconfig"; sourceTree = "<group>"; };
 		E16D33F520FABB2A00C52588 /* User_defaults+Cholor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User_defaults+Cholor.swift"; sourceTree = "<group>"; };
+		E16D33F820FABCC700C52588 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		E179A4EA20F83A7F00F8E2B7 /* olivier_demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = olivier_demo.ttf; sourceTree = "<group>"; };
 		E179A4EC20F83ACA00F8E2B7 /* Cholor.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cholor.m4a; sourceTree = "<group>"; };
 		E179A4EE20F83F6400F8E2B7 /* JuegoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegoViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E16D33F720FABC3600C52588 /* Enumeraciones */ = {
+			isa = PBXGroup;
+			children = (
+				E16D33F820FABCC700C52588 /* Material.swift */,
+			);
+			path = Enumeraciones;
+			sourceTree = "<group>";
+		};
 		E179A4F220F855B900F8E2B7 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				E1FE2A7220F959E100563C7A /* Extensiones */,
+				E16D33F720FABC3600C52588 /* Enumeraciones */,
 				E1FE2A7320F959EA00563C7A /* Controladores */,
 				E1FE2A7420F959F100563C7A /* Vistas */,
 				E1FE2A7520F959F800563C7A /* Modelos */,
@@ -348,6 +359,7 @@
 				E179A4F120F853E900F8E2B7 /* ListadoViewController.swift in Sources */,
 				E1FE2A8320F95CE000563C7A /* ListadoViewController+Acciones.swift in Sources */,
 				E1FE2A8120F95CC600563C7A /* JuegoViewController+Acciones.swift in Sources */,
+				E16D33F920FABCC700C52588 /* Material.swift in Sources */,
 				E1F99E4220F462D400FCB841 /* AppDelegate.swift in Sources */,
 				E179A4EF20F83F6400F8E2B7 /* JuegoViewController.swift in Sources */,
 				E16D33F620FABB2A00C52588 /* User_defaults+Cholor.swift in Sources */,
