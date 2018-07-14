@@ -49,25 +49,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        // Detiene la música de fondo, si la aplicación se vuelve inactiva al recibir una llamada de teléfono, un mensaje, etc
+        if (mezclador.isPlaying) {
+            mezclador.stop()
+        }
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        // Detiene la música de fondo, si la aplicación se va al background, es decir, si un iPhone se pulsa el botón home
+        if (mezclador.isPlaying) {
+            mezclador.stop()
+        }
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        // Inicia la música de fondo, si la aplicación vuelve al primer plano desde el background, es decir, si un iPhone el usuario, pulsando dos veces en el botón home, vuelve a poner en pantalla la aplicación
+        if (mezclador.isStopped) {
+            mezclador.play()
+        }
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        // Inicia la música de fondo, si la aplicación fue pausada y no se ha iniciado todavía
+        if (mezclador.isStopped) {
+            mezclador.play()
+        }
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        // Detiene la música de fondo, cuando la aplicación termina
+        if (mezclador.isPlaying) {
+            mezclador.stop()
+        }
+        do {
+            try AudioKit.stop()
+        } catch {
+            print("Se ha producido un error al parar el motor AudioKit")
+        }
     }
     
     // MARK: - Compartido
