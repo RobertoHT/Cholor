@@ -146,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				E1FE2A7020F958F500563C7A /* UIColor+Cholor.swift */,
+				E16D33F520FABB2A00C52588 /* User_defaults+Cholor.swift */,
 			);
 			path = Extensiones;
 			sourceTree = "<group>";
@@ -154,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				E1F99E4120F462D400FCB841 /* AppDelegate.swift */,
-				E16D33F520FABB2A00C52588 /* User_defaults+Cholor.swift */,
 				E1FE2A7920F95BFD00563C7A /* Inicio */,
 				E1FE2A7820F95BF700563C7A /* Juego */,
 				E1FE2A7720F95BF000563C7A /* Listado */,
