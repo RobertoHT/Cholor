@@ -9,6 +9,9 @@ class InicioViewController: UIViewController {
     
     // MARK: - Propiedades
 
+    /// Este botón inicia el juego
+    @IBOutlet weak var botonJugar: UIButton!
+    
     // MARK: - Ciclo de vida
     override func viewDidLoad() {
         super.viewDidLoad()

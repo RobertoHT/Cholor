@@ -44,6 +44,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="botonJugar" destination="Tid-xO-gAU" id="brY-bw-Pzs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,14 +217,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Boton Inicio" width="180" height="195"/>
-        <image name="Boton Jugar Normal" width="672" height="492"/>
-        <image name="Boton Jugar Pulsado" width="672" height="492"/>
-        <image name="Boton Listado Bolas" width="132" height="132"/>
-        <image name="Boton Volver" width="210" height="210"/>
-        <image name="Fondo Pantalla Inicio" width="1125" height="2001"/>
+        <image name="Boton Inicio" width="60" height="65"/>
+        <image name="Boton Jugar Normal" width="224" height="164"/>
+        <image name="Boton Jugar Pulsado" width="224" height="164"/>
+        <image name="Boton Listado Bolas" width="44" height="44"/>
+        <image name="Boton Volver" width="70" height="70"/>
+        <image name="Fondo Pantalla Inicio" width="375" height="667"/>
         <image name="Fondo Pantalla Juego" width="1125" height="2001"/>
-        <image name="Fondo Pantalla Listado Bolas" width="1125" height="2001"/>
+        <image name="Fondo Pantalla Listado Bolas" width="375" height="667"/>
         <namedColor name="Blanco Transparente">
             <color red="1" green="1" blue="1" alpha="0.31999999284744263" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
