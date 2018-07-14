@@ -8,7 +8,6 @@ import AVFoundation
 class InicioViewController: UIViewController {
     
     // MARK: - Propiedades
-    var player = AVAudioPlayer()
 
     // MARK: - Ciclo de vida
     override func viewDidLoad() {
