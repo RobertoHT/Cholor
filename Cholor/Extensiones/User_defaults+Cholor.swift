@@ -73,4 +73,61 @@ extension UserDefaults: DefaultsCompartible {
     func guardarMaterial(_ material: Material) {
         UserDefaults.standard.set(material, forKey: ClaveUserDefaults.material.rawValue)
     }
+    
+    // MARK: - Leer
+    
+    // MARK: Nivel
+    
+    /**
+     Obtiene el número de nivel guardado en *UserDefaults* en formato *String*
+     
+     - returns:
+     Número nivel del juego.
+     */
+    func obtenerNivel() -> String {
+        return String(UserDefaults.standard.integer(forKey: ClaveUserDefaults.nivel.rawValue))
+    }
+    
+    /**
+     Obtiene el número de nivel guardado en *UserDefaults* en formato *Int*
+     
+     - returns:
+     Número nivel del juego.
+     */
+    func obtenerNivel() -> Int {
+        return UserDefaults.standard.integer(forKey: ClaveUserDefaults.nivel.rawValue)
+    }
+    
+    // MARK: Puntuación
+    
+    /**
+     Obtiene el número con los puntos guardados en *UserDefaults* en formato *String*
+     
+     - returns:
+     Número con los puntos obtenidos en el juego.
+     */
+    func obtenerPuntuacion() -> String {
+        return String(UserDefaults.standard.integer(forKey: ClaveUserDefaults.puntos.rawValue))
+    }
+    
+    // MARK: Material
+    
+    /**
+     Obtiene el material de la bola en *UserDefaults* en formato *String*
+     
+     - returns:
+     El material de la bola.
+     */
+    func obtenerMaterial() -> Material {
+        guard let texto = UserDefaults.standard.string(forKey: ClaveUserDefaults.material.rawValue)
+            else { return .madera }
+        switch texto {
+        case "madera": return .madera
+        case "acero": return .acero
+        case "plastico": return .plastico
+        case "piedra": return .piedra
+        case "esponja": return .esponja
+        default: return .madera
+        }
+    }
 }
