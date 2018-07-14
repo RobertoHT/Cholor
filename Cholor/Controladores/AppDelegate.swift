@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var colisionBolasNaranjasReproductor: AKAudioPlayer!
     /// Reproductor para escuchar la colisión entre la bola de lanzamiento y la bola negra
     var colisionConBolaNegraReproductor: AKAudioPlayer!
-    /// Reproductor para escuchar la colisión el sonido para pasar al siguiente nivel
+    /// Reproductor para escuchar el sonido para pasar al siguiente nivel
     var siguienteNivelReproductor: AKAudioPlayer!
     /// Mezclador con todos los reproductores
     var mezclador: AKMixer!
@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         if mezclador == nil {
             // Inicializa el mezclador al iniciar la aplicación
-            initMezcladorMusical()
+            iniciarMezcladorMusical()
         } else {
             // Inicia el play, si ya esta creado el mezclador
             do {
@@ -87,7 +87,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /**
      Inicializa el mezclador de música que contienen todos los audios usados en la aplicación
      */
-    func initMezcladorMusical() {
+    func iniciarMezcladorMusical() {
         // Crear reproductores
         do {
             // Archivos de sonido
