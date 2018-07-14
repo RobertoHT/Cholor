@@ -128,8 +128,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch {
             print("Se ha producido un error al intentar iniciar el motor de AudioKit")
         }
-        // Será movido
-        musicaFondoReproductor.play()
     }
 
 }
