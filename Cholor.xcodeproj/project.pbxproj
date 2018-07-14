@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		61153F659945CA150F3B5BAB /* Pods_Cholor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF316DD358F7BEF7AFE5A561 /* Pods_Cholor.framework */; };
+		E16D33F620FABB2A00C52588 /* User_defaults+Cholor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16D33F520FABB2A00C52588 /* User_defaults+Cholor.swift */; };
 		E179A4EB20F83A7F00F8E2B7 /* olivier_demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E179A4EA20F83A7F00F8E2B7 /* olivier_demo.ttf */; };
 		E179A4ED20F83ACA00F8E2B7 /* Cholor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E179A4EC20F83ACA00F8E2B7 /* Cholor.m4a */; };
 		E179A4EF20F83F6400F8E2B7 /* JuegoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E179A4EE20F83F6400F8E2B7 /* JuegoViewController.swift */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		98F78BA484DDED8B19E87AEB /* Pods-Cholor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cholor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cholor/Pods-Cholor.release.xcconfig"; sourceTree = "<group>"; };
 		AA12C498B5004F9D37A6AC1B /* Pods-Cholor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cholor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cholor/Pods-Cholor.debug.xcconfig"; sourceTree = "<group>"; };
+		E16D33F520FABB2A00C52588 /* User_defaults+Cholor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User_defaults+Cholor.swift"; sourceTree = "<group>"; };
 		E179A4EA20F83A7F00F8E2B7 /* olivier_demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = olivier_demo.ttf; sourceTree = "<group>"; };
 		E179A4EC20F83ACA00F8E2B7 /* Cholor.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cholor.m4a; sourceTree = "<group>"; };
 		E179A4EE20F83F6400F8E2B7 /* JuegoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegoViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				E1F99E4120F462D400FCB841 /* AppDelegate.swift */,
+				E16D33F520FABB2A00C52588 /* User_defaults+Cholor.swift */,
 				E1FE2A7920F95BFD00563C7A /* Inicio */,
 				E1FE2A7820F95BF700563C7A /* Juego */,
 				E1FE2A7720F95BF000563C7A /* Listado */,
@@ -347,6 +350,7 @@
 				E1FE2A8120F95CC600563C7A /* JuegoViewController+Acciones.swift in Sources */,
 				E1F99E4220F462D400FCB841 /* AppDelegate.swift in Sources */,
 				E179A4EF20F83F6400F8E2B7 /* JuegoViewController.swift in Sources */,
+				E16D33F620FABB2A00C52588 /* User_defaults+Cholor.swift in Sources */,
 				E1FE2A7120F958F500563C7A /* UIColor+Cholor.swift in Sources */,
 				E1FE2A7D20F95C8800563C7A /* InicioViewController+Navegacion.swift in Sources */,
 				E1FE2A7F20F95CBC00563C7A /* JuegoViewController+Navegacion.swift in Sources */,
