@@ -70,14 +70,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    // MARK: - AudioKit
+    // MARK: - Compartido
     
+    /**
+     Función de utilidad estática para acceder a las propiedades públicas de la clase
+     
+     - returns:
+     Devuelve una instancia para manejar las propiedades de la clase *AppDelegate*
+     */
     static func compartido() -> AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
     }
 
     // MARK: - AudioKit
     
+    /**
+     Inicializa el mezclador de música que contienen todos los audios usados en la aplicación
+     */
     func initMezcladorMusical() {
         // Crear reproductores
         do {
