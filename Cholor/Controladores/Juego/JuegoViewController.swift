@@ -1,4 +1,4 @@
-//  Cholor App by Roberto Hernández Tamayo on 09/07/18.
+//  Cholor App by Roberto Hernández Tamayo.
 //  Copyright © 2018 Roberto Hernandez Tamayo.
 
 import UIKit
@@ -14,6 +14,14 @@ class JuegoViewController: UIViewController {
     /// Volumen inicial de la música de fondo, establecido en el segue de la página inicio
     lazy var volumenMusicaFondo: Double = {
         return AppDelegate.compartido().musicaFondoReproductor.volume
+    }()
+    /// Material que compone la bola
+    lazy var material: Material = {
+        return UserDefaults.compartido.obtenerMaterial()
+    }()
+    /// Nivel del juego. Sólo se usa a nivel interno para las lecturas a *UserDefaults*
+    lazy var valorNivel: Int = {
+        return UserDefaults.compartido.obtenerNivel()
     }()
 
     // MARK: - Ciclo de vida
