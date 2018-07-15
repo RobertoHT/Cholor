@@ -5,5 +5,6 @@
         <page name='Constantes Variables'/>
         <page name='Funciones'/>
         <page name='Manejo Errores'/>
+        <page name='Notificacion'/>
     </pages>
 </playground>
