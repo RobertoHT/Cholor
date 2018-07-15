@@ -13,6 +13,13 @@ class JuegoViewController: UIViewController {
     @IBOutlet weak var etiquetaMarcadorPuntos: UILabel!
     /// Etiqueta con el número nivel actual del juego
     @IBOutlet weak var etiquetaMarcadorNivel: UILabel!
+    /// Botón para volver a la pantalla de inicio
+    @IBOutlet weak var botonInicio: UIButton!
+    
+    // MARK: - Restricciones
+    
+    /// Restricción del botón inicio en su lado izquierdo hacia el lado izquierdo de la pantalla
+    @IBOutlet weak var restriccionIzquierdaBotonInicio: NSLayoutConstraint!
     
     // MARK: - Globales
     
@@ -29,6 +36,10 @@ class JuegoViewController: UIViewController {
     /// Nivel del juego. Sólo se usa a nivel interno para las lecturas a *UserDefaults*
     lazy var valorNivel: Int = {
         return UserDefaults.compartido.obtenerNivel()
+    }()
+    /// Valor inicial en el *Storyboard* de la restricción del lado izquierdo del botón inicio
+    lazy var valorRestriccionIzquierdaBotonInicio: CGFloat = {
+        return restriccionIzquierdaBotonInicio.constant
     }()
 
     // MARK: - Ciclo de vida

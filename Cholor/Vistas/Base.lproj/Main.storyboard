@@ -6,6 +6,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -161,9 +162,8 @@
                                     <constraint firstItem="rfi-Rl-TiT" firstAttribute="leading" secondItem="V4P-gD-iQM" secondAttribute="trailing" id="mmd-2E-eBl"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV6-Gl-czQ">
-                                <rect key="frame" x="299" y="582" width="60" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV6-Gl-czQ">
+                                <rect key="frame" x="319" y="582" width="60" height="65"/>
                                 <state key="normal" image="Boton Inicio"/>
                                 <connections>
                                     <action selector="inicioPulsado:" destination="XLJ-G2-ERD" eventType="touchUpInside" id="gvw-4v-q58"/>
@@ -173,14 +173,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hA1-94-c7B" firstAttribute="centerX" secondItem="E1p-Dw-bmO" secondAttribute="centerX" id="13h-el-beP"/>
+                            <constraint firstItem="mV6-Gl-czQ" firstAttribute="trailing" secondItem="E1p-Dw-bmO" secondAttribute="trailingMargin" constant="20" id="EVu-Rl-ag6"/>
+                            <constraint firstItem="3Or-Ax-YEN" firstAttribute="top" secondItem="mV6-Gl-czQ" secondAttribute="bottom" constant="20" id="KsP-6B-FzO"/>
                             <constraint firstAttribute="trailing" secondItem="hA1-94-c7B" secondAttribute="trailing" id="KyI-Tp-aJy"/>
                             <constraint firstItem="hA1-94-c7B" firstAttribute="top" secondItem="mQl-Eq-MiF" secondAttribute="bottom" constant="8" id="Z38-zD-1Yu"/>
                             <constraint firstItem="hA1-94-c7B" firstAttribute="width" secondItem="E1p-Dw-bmO" secondAttribute="width" id="ua0-cx-YEJ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="botonInicio" destination="mV6-Gl-czQ" id="cMi-0A-VKb"/>
                         <outlet property="etiquetaMarcadorNivel" destination="pWl-QD-g1b" id="IPH-8i-MlW"/>
                         <outlet property="etiquetaMarcadorPuntos" destination="i1n-My-W2m" id="QiV-mu-WcH"/>
+                        <outlet property="restriccionIzquierdaBotonInicio" destination="EVu-Rl-ag6" id="Qcq-gI-dPO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1Y-f8-E9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
