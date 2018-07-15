@@ -14,6 +14,9 @@ class NotificacionViewController: LiveViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("Añadir notificación")
+        NotificationCenter.default.addObserver(self, selector: #selector(NotificacionViewController.animacionColorCuadrado), name: .nombreFinAnimacionNotificacion, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -24,6 +27,13 @@ class NotificacionViewController: LiveViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        print("👀 esperando 3 segundos")
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3)) {
+            // lanzar notificación
+            print("🚀 lanzar notificación")
+            NotificationCenter.default.post(name: .nombreFinAnimacionNotificacion, object: nil)
+        }
     }
     
     // Añadir cuadrado en el centro de la pantalla
@@ -33,6 +43,14 @@ class NotificacionViewController: LiveViewController {
         cuadrado.center = view.center
         cuadrado.backgroundColor = .yellow
         view.addSubview(cuadrado)
+    }
+    
+    // Animación
+    @objc func animacionColorCuadrado() {
+        print ("🏄🏻‍♂️ Animación para poner de color morado el cuadrado")
+        UIView.animate(withDuration: 1) {
+            self.cuadrado.backgroundColor = .purple
+        }
     }
 }
 
