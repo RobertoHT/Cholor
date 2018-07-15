@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		61153F659945CA150F3B5BAB /* Pods_Cholor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF316DD358F7BEF7AFE5A561 /* Pods_Cholor.framework */; };
+		E119811D20FADA42002E32E2 /* Notificacion+Cholor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E119811C20FADA42002E32E2 /* Notificacion+Cholor.swift */; };
+		E119811F20FADAEB002E32E2 /* JuegoViewController+Notificaciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = E119811E20FADAEB002E32E2 /* JuegoViewController+Notificaciones.swift */; };
 		E16D33F620FABB2A00C52588 /* User_defaults+Cholor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16D33F520FABB2A00C52588 /* User_defaults+Cholor.swift */; };
 		E16D33F920FABCC700C52588 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16D33F820FABCC700C52588 /* Material.swift */; };
 		E16D33FB20FAC6FC00C52588 /* JuegoViewController+Inicializadores.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16D33FA20FAC6FC00C52588 /* JuegoViewController+Inicializadores.swift */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		98F78BA484DDED8B19E87AEB /* Pods-Cholor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cholor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cholor/Pods-Cholor.release.xcconfig"; sourceTree = "<group>"; };
 		AA12C498B5004F9D37A6AC1B /* Pods-Cholor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cholor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cholor/Pods-Cholor.debug.xcconfig"; sourceTree = "<group>"; };
+		E119811C20FADA42002E32E2 /* Notificacion+Cholor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notificacion+Cholor.swift"; sourceTree = "<group>"; };
+		E119811E20FADAEB002E32E2 /* JuegoViewController+Notificaciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JuegoViewController+Notificaciones.swift"; sourceTree = "<group>"; };
 		E16D33F520FABB2A00C52588 /* User_defaults+Cholor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User_defaults+Cholor.swift"; sourceTree = "<group>"; };
 		E16D33F820FABCC700C52588 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		E16D33FA20FAC6FC00C52588 /* JuegoViewController+Inicializadores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JuegoViewController+Inicializadores.swift"; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 			children = (
 				E1FE2A7020F958F500563C7A /* UIColor+Cholor.swift */,
 				E16D33F520FABB2A00C52588 /* User_defaults+Cholor.swift */,
+				E119811C20FADA42002E32E2 /* Notificacion+Cholor.swift */,
 			);
 			path = Extensiones;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				E16D33FC20FAC85900C52588 /* JuegoViewController+Configuradores.swift */,
 				E1FE2A7E20F95CBC00563C7A /* JuegoViewController+Navegacion.swift */,
 				E1FE2A8020F95CC600563C7A /* JuegoViewController+Acciones.swift */,
+				E119811E20FADAEB002E32E2 /* JuegoViewController+Notificaciones.swift */,
 			);
 			path = Juego;
 			sourceTree = "<group>";
@@ -361,10 +367,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E119811D20FADA42002E32E2 /* Notificacion+Cholor.swift in Sources */,
 				E1F99E4420F462D400FCB841 /* InicioViewController.swift in Sources */,
 				E179A4F120F853E900F8E2B7 /* ListadoViewController.swift in Sources */,
 				E1FE2A8320F95CE000563C7A /* ListadoViewController+Acciones.swift in Sources */,
 				E1FE2A8120F95CC600563C7A /* JuegoViewController+Acciones.swift in Sources */,
+				E119811F20FADAEB002E32E2 /* JuegoViewController+Notificaciones.swift in Sources */,
 				E16D33F920FABCC700C52588 /* Material.swift in Sources */,
 				E16D33FB20FAC6FC00C52588 /* JuegoViewController+Inicializadores.swift in Sources */,
 				E1F99E4220F462D400FCB841 /* AppDelegate.swift in Sources */,
