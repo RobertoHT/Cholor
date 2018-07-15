@@ -7,6 +7,13 @@ import UIKit
 class JuegoViewController: UIViewController {
     // MARK: - Propiedades
     
+    // MARK: - Elementos UI
+    
+    /// Etiqueta con los puntos conseguidos en el juego
+    @IBOutlet weak var etiquetaMarcadorPuntos: UILabel!
+    /// Etiqueta con el número nivel actual del juego
+    @IBOutlet weak var etiquetaMarcadorNivel: UILabel!
+    
     // MARK: - Globales
     
     // Variables
@@ -28,7 +35,25 @@ class JuegoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // UserDefaults
+        iniciarUserDefaults()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Marcador
+        configurarMarcador()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        // Guardar en UserDefaults el nivel y los puntos al salir del juego
+        guard let nivel = etiquetaMarcadorNivel.text,
+            let puntos = etiquetaMarcadorPuntos.text else { return }
+        UserDefaults.compartido.guardarNivel(nivel)
+        UserDefaults.compartido.guardarPuntuacion(puntos)
     }
 
     override func didReceiveMemoryWarning() {

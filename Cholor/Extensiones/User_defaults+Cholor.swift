@@ -110,6 +110,16 @@ extension UserDefaults: DefaultsCompartible {
         return String(UserDefaults.standard.integer(forKey: ClaveUserDefaults.puntos.rawValue))
     }
     
+    /**
+     Obtiene el número con los puntos guardados en *UserDefaults* en formato *Int*
+     
+     - returns:
+     Número con los puntos obtenidos en el juego.
+     */
+    func obtenerPuntuacion() -> Int {
+        return UserDefaults.standard.integer(forKey: ClaveUserDefaults.puntos.rawValue)
+    }
+    
     // MARK: Material
     
     /**

@@ -178,6 +178,10 @@
                             <constraint firstItem="hA1-94-c7B" firstAttribute="width" secondItem="E1p-Dw-bmO" secondAttribute="width" id="ua0-cx-YEJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="etiquetaMarcadorNivel" destination="pWl-QD-g1b" id="IPH-8i-MlW"/>
+                        <outlet property="etiquetaMarcadorPuntos" destination="i1n-My-W2m" id="QiV-mu-WcH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1Y-f8-E9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
